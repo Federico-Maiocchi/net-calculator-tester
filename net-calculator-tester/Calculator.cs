@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace net_calculator_tester
 {
-    internal class Calculator
+    public class Calculator
     {
-        public int Add(int num1, int num2)
+        public static int Add(int num1, int num2)
         {
             return num1 + num2;
         }
 
-        public int Subtract(int num1, int num2)
+        public static int Subtract(int num1, int num2)
         {
             return num1 - num2;
         }
 
-        public int Divide(int num1, int num2)
+        public static int Divide(int num1, int num2)
         {
             if (num2 == 0)
             {
@@ -28,7 +28,7 @@ namespace net_calculator_tester
             return num1 / num2;
         }
 
-        public int Multiply(int num1, int num2)
+        public static int Multiply(int num1, int num2)
         {
             return num1 * num2;
         }
