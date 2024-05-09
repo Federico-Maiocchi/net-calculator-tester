@@ -13,7 +13,7 @@ namespace TestProject1
         [TestCase(1,2,3)]
         [TestCase(-10,10,0)]
         [TestCase(3,7,10)]
-        public void TestSum(int x, int y, int result )
+        public void TestSum(float x, float y, float result )
         {
             
             Calculator.Add(x, y); 
@@ -26,9 +26,9 @@ namespace TestProject1
         [TestCase(1,2,-1)]
         [TestCase(7, 10,-3)]
         [TestCase(7,3,4)]
-        public void TestSubtract(int x,int y, int result)
+        public void TestSubtract(float x,float y, float result)
         {
-            int actualResult = Calculator.Subtract(x, y);
+            float actualResult = Calculator.Subtract(x, y);
 
             Assert.AreEqual(result, actualResult);
         }
@@ -37,9 +37,9 @@ namespace TestProject1
         [TestCase(4,2,2)]
         [TestCase(10,2,5)]
         [TestCase(7,7,1)]
-        public void TestDivide(int x,int y,int result)
+        public void TestDivide(float x, float y, float result)
         {
-            int actualResult = Calculator.Divide(x, y);
+            float actualResult = Calculator.Divide(x, y);
 
             Assert.AreEqual (actualResult, result);
 
@@ -50,9 +50,9 @@ namespace TestProject1
         [TestCase(4,2,8)]
         [TestCase(10,2,20)]
         [TestCase(7,2,14)]
-        public void TestMultiply(int x, int y,int result)
+        public void TestMultiply(float x, float y,float result)
         {
-            int actualResult = Calculator.Multiply(x, y);
+            float actualResult = Calculator.Multiply(x, y);
 
             Assert.IsTrue(actualResult == result);
         }

@@ -8,17 +8,17 @@ namespace net_calculator_tester
 {
     public class Calculator
     {
-        public static int Add(int num1, int num2)
+        public static float Add(float num1, float num2)
         {
             return num1 + num2;
         }
 
-        public static int Subtract(int num1, int num2)
+        public static float Subtract(float num1, float num2)
         {
             return num1 - num2;
         }
 
-        public static int Divide(int num1, int num2)
+        public static float Divide(float num1, float num2)
         {
             if (num2 == 0)
             {
@@ -28,7 +28,7 @@ namespace net_calculator_tester
             return num1 / num2;
         }
 
-        public static int Multiply(int num1, int num2)
+        public static float Multiply(float num1, float num2)
         {
             return num1 * num2;
         }
