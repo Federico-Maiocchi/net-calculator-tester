@@ -1,12 +1,21 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using net_calculator_tester;
+
 
 namespace UnitTestProject1
 {
-    [TestClass]
-    public class UnitTest1
+    
+    public class Test
     {
-        [TestMethod]
+        [SetUp]
+        public void Setup()
+        {
+
+        }
+
+
+        [Test]
         public void TestMethod1()
         {
         }
